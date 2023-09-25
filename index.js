@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 
 app.use("/user",userRouter)
 app.use("/posts",postRouter)
-app.listen(process.env.PORT,async()=>{
+app.listen(3000,async()=>{
     try {
         await connection;
         console.log("db connected")
